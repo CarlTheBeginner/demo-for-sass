@@ -1,0 +1,54 @@
+@import "./variables";
+@import "./globals";
+
+.section-main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 120rem;
+    margin: 0 auto;
+    gap: 3.2rem;
+    margin-bottom: 2.4rem;
+
+    .card-img {
+      width: 100%;
+      margin-bottom: 2rem;
+    }
+
+    .product-title {
+      font-weight: 600;
+      font-size: 3rem;
+      margin-bottom: 1.4rem;
+      color: $mainColor;
+    }
+
+    .product-description {
+      font-size: 1.6rem;
+      line-height: 1.5;
+      color: $paragraphColor;
+    }
+  }
+
+  .buy-link:link,
+  .buy-link:visited {
+    display: inline-block;
+    padding: 1.4rem 2.4rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.8rem;
+    background-color: $mainColor;
+    transition: all 0.3s;
+
+    &:hover,
+    &:active {
+      background-color: $demoColor;
+    }
+  }
+}
